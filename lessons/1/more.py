@@ -1,0 +1,7 @@
+print('Write a: ')
+a = int(input())
+print('Write b: ')
+b = int(input())
+print(a, ' + ', b, ' = ', a + b)
+print('{} {}'.format(a, b))
+print(f'{a} {b}')
