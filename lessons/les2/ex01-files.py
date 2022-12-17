@@ -4,7 +4,7 @@ with open('file.txt', 'a') as data:
 
 #colors = ['red', 'green', 'blue']
 #data = open('file.txt', 'w')
-#data.writelines(colors) # разделителей не будет
+#data.writelines(colors) # СЂР°Р·РґРµР»РёС‚РµР»РµР№ РЅРµ Р±СѓРґРµС‚
 #data.write('\nLINE 2\n')
 #data.write('LINE 3\n')
 #data.close()
