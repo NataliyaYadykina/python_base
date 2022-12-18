@@ -11,9 +11,7 @@ n = abs(int(input('Enter n: ')))
 lst_index = [randint(0, 2 * n) for _ in range(5)]
 print(lst_index)
 
-lst_numbers = []
-for i in range(2 * n + 1):
-   lst_numbers.append(- n + i)
+lst_numbers = [i for i in range(-n, n + 1)]
 print(lst_numbers)
 
 multi = 1
