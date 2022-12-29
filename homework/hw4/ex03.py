@@ -13,7 +13,7 @@ print(lst)
 
 lst_res = []
 
-for i in range(len(lst)):
-    if lst[i] not in lst_res:
-        lst_res.append(lst[i])
+for v in lst:
+    if lst.count(v) < 2:
+        lst_res.append(v)
 print(lst_res)
