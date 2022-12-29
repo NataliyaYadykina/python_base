@@ -7,8 +7,8 @@
 # 2*x^6 + 4*x      5*x^2 + 2*x
 #    2*x^6 + 5x^2 + 6x
 
-polinomial1 = '2*x^6 +7*x^5 - 5*x^3 + 4*x+9'
-polinomial2 = '-8*x^5-5*x^2 + 2*x - 3'
+polinomial1 = '2*x^6 +7*x^5 + 4*x^3 - 4*x-4'
+polinomial2 = '-8*x^6 - 5*x^3 + 2*x + 4'
 
 with open('polynomial1.txt', 'w') as data:
     data.write(polinomial1)
@@ -30,6 +30,10 @@ def poli_splt(polinomial):
         polinomial = polinomial[1:]
     if '+' in polinomial:
         polinomial = polinomial.split('+')
+    else:
+        temp = polinomial
+        polinomial = []
+        polinomial.append(temp)
     for i in range(len(polinomial)):
         if '-' in polinomial[i]:
             polinomial[i] = polinomial[i].split('-')
@@ -98,13 +102,13 @@ print()
 
 res_polinom = ''
 for key, values in result_dict.items():
-    if key != 'no':
+    if key != 'no' and values != 0:
         res_polinom = key + res_polinom
-    if values != 1 and values != -1:
+    if (values != 1 and values != -1 and values != 0) or (key == 'no' and values != 0):
         res_polinom = str(abs(values)) + res_polinom
     if values < 0:
         res_polinom = ' - ' + res_polinom
-    else:
+    elif values > 0:
         res_polinom = ' + ' + res_polinom
 if res_polinom[:3] == ' + ':
     res_polinom = res_polinom[3:]
