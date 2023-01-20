@@ -39,6 +39,8 @@ print(f'{active_player} starts the game!')
 
 while count_candies > 0:
     if is_bot == 1 and active_player == player2:
+        # take_candies = randint(1, max_take_candies)  # stupid bot
+        # smart bot:
         if count_candies % (1 + max_take_candies) != 0:
             take_candies = count_candies % (1 + max_take_candies)
         else:
