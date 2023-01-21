@@ -1,11 +1,11 @@
-# Модуль 1: сбор информации с датчиков - data_provider 
+# РњРѕРґСѓР»СЊ 1: СЃР±РѕСЂ РёРЅС„РѕСЂРјР°С†РёРё СЃ РґР°С‚С‡РёРєРѕРІ - data_provider 
 # (get_temperature, get_pressure, get_wind_speed)
-# Модуль 2: логирование - logger 
+# РњРѕРґСѓР»СЊ 2: Р»РѕРіРёСЂРѕРІР°РЅРёРµ - logger 
 # (temperature_logger, pressure_logger, wind_speed_logger)
-# Модуль 3: UI - user_interface 
+# РњРѕРґСѓР»СЊ 3: UI - user_interface 
 # (temperature_view, pressure_view, wind_speed_view)
-# Модуль 4: HTML-генератор - html_creater (create)
-# Модуль 5: главный модуль - main
+# РњРѕРґСѓР»СЊ 4: HTML-РіРµРЅРµСЂР°С‚РѕСЂ - html_creater (create)
+# РњРѕРґСѓР»СЊ 5: РіР»Р°РІРЅС‹Р№ РјРѕРґСѓР»СЊ - main
 
 from random import randint
 
