@@ -1,4 +1,4 @@
-# модуль, объединяющий модули интерфейса view и операций model
+# РјРѕРґСѓР»СЊ, РѕР±СЉРµРґРёРЅСЏСЋС‰РёР№ РјРѕРґСѓР»Рё РёРЅС‚РµСЂС„РµР№СЃР° view Рё РѕРїРµСЂР°С†РёР№ model
 
 import ex01AplusBmodel_sub as ex01AplusBmodel
 import ex01AplusBview
