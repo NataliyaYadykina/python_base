@@ -2,12 +2,12 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
 from random import randint
 
-token1 = '5839031956:AAFEyovdrzM_46yGJfFh8w62_Y1u2SQPwl0'
+token1 = 'токен'
 
 A = 0
 B = 1
 
-bot = Bot(token='5839031956:AAFEyovdrzM_46yGJfFh8w62_Y1u2SQPwl0')
+bot = Bot(token='токен')
 updater = Updater(token=token1)
 dispatcher = updater.dispatcher # brain
 
