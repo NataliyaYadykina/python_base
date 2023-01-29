@@ -21,16 +21,16 @@ def update_journal(student, subject, score, journal):
     new_str = ''
     old_str = ''
     if search_text in journal:
-        print('student found')
+        # print('student found')
         if search_text + str(subject) in journal:
-            print('student and subject found')
+            # print('student and subject found')
             for line in data:
                 if search_text + str(subject) in line:
                     old_str = line.replace('\n', '')
                     break
             new_str = old_str + ' ' + score
         else:
-            print('student found and subject NOT found')
+            # print('student found and subject NOT found')
             for line in data:
                 if search_text in line:
                     old_str = line.replace('\n', '')
@@ -40,15 +40,15 @@ def update_journal(student, subject, score, journal):
                         new_str = f'{student}-{subject}:{score}\n' + old_str
                         break
                     new_str = old_str + f'\n{student}-{subject}:{score}'
-        print(f'old: {old_str}')
-        print(f'new: {new_str}')
+        # print(f'old: {old_str}')
+        # print(f'new: {new_str}')
         new_data = journal.replace(old_str, new_str)
-        print(new_data)
-        print(f'{old_str} replaced to {new_str}')
+        # print(new_data)
+        # print(f'{old_str} replaced to {new_str}')
         with open ('hw8_journal.txt', 'w', encoding = 'utf-8') as f:
             f.write(new_data)
     else:
-        print('student not found')
+        # print('student not found')
         search_text = str(student + 1) + '-'
         if search_text in journal:
             for line in data:
