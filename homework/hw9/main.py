@@ -1,7 +1,7 @@
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-token1 = ''
+token1 = '6161250705:AAGuSIvSddYd0MJ9Dp-A2yNPJo1YgPE_iOE'
 
 bot = Bot(token=token1)
 updater = Updater(token=token1)
