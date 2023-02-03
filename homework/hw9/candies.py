@@ -2,7 +2,7 @@ from random import randint
 from telegram import Bot, Update
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters, CallbackContext
 
-token1 = '6161250705:AAGuSIvSddYd0MJ9Dp-A2yNPJo1YgPE_iOE'
+token1 = 'token'
 
 # ид чата; имя игрока; всего конфет; уровень; статус игры; чей ход; конфет у игрока; конфет у бота; число игр; число выигрышей; сумма баллов;
 #       0;          1;            2;       3;           4;       5;               6;             7;         8;               9;           10;
